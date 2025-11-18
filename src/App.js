@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useScrollNavigation } from "./hooks/useScrollNavigation";
 import { DarkModeToggle } from "./components/DarkModeToggle";
+import { PdfDownloadButton } from "./components/PdfDownloadButton";
 import { NavigationDots } from "./components/NavigationDots";
 import { ScrollHint } from "./components/ScrollHint";
 import { HeroSection } from "./components/sections/HeroSection";
@@ -147,6 +148,7 @@ function App() {
       }`}
     >
       <DarkModeToggle isDarkMode={isDarkMode} onToggle={toggleDarkMode} />
+      <PdfDownloadButton isDarkMode={isDarkMode} />
 
       <NavigationDots
         sections={currentSections}
