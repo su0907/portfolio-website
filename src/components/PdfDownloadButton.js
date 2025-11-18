@@ -4,8 +4,8 @@ export const PdfDownloadButton = ({ isDarkMode }) => {
   const handleDownload = () => {
     // public 폴더의 PDF 파일 다운로드
     const link = document.createElement("a");
-    link.href = "/202344024_김민수_포트폴리오.pdf";
-    link.download = "202344024_김민수_포트폴리오.pdf";
+    link.href = "/김민수_포트폴리오.pdf";
+    link.download = "김민수_포트폴리오.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -14,7 +14,7 @@ export const PdfDownloadButton = ({ isDarkMode }) => {
   return (
     <button
       onClick={handleDownload}
-      className={`fixed top-6 right-24 z-50 flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
+      className={`fixed top-6 right-32 z-50 flex items-center space-x-2 px-4 py-2 rounded-full transition-all duration-300 ${
         isDarkMode
           ? "bg-gray-800 text-white hover:bg-gray-700"
           : "bg-white text-gray-700 hover:bg-gray-50 shadow-lg"
