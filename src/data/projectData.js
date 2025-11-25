@@ -1,0 +1,106 @@
+export const projectData = {
+  talkdok: {
+    title: "TalkDok - 독서 챌린지 앱",
+    period: "2024.03 - 2024.06",
+    type: "팀 프로젝트",
+    tech: "Flutter + Firebase",
+    description:
+      "Flutter + Firebase 기반의 독서 챌린지 애플리케이션에서 개인 서재 관리 시스템을 전담하여 개발했습니다.",
+    role: [
+      "개인 서재 관리 시스템 설계 및 구현",
+      "독서 진행률 실시간 추적 시스템 개발",
+      "Firebase Firestore를 활용한 데이터 관리",
+      "장르별 독서 패턴 분석 기능 구현",
+    ],
+    techStack: [
+      "Flutter (Dart)",
+      "Firebase (Firestore, Auth, Storage)",
+      "Android Studio",
+      "VS Code",
+      "Git",
+    ],
+    features: [
+      "읽은 책/읽는 중/읽고 싶은 책 분류 시스템",
+      "독서 진행률 실시간 추적",
+      "장르별 독서 패턴 분석",
+      "독서 감상 및 메모 작성 기능",
+    ],
+    achievements: [
+      "실시간 데이터베이스 연동 및 쿼리 최적화 구현",
+      "Firebase 보안 규칙 설정 및 사용자 인증 시스템 구축",
+      "팀 협업을 통한 Git 플로우 경험 (브랜치 전략, PR 리뷰)",
+      "NoSQL 데이터베이스 설계 및 최적화 경험",
+    ],
+  },
+  bcoach: {
+    title: "B+코치 - AI 대화형 문제풀이 앱",
+    period: "2024.09 - 2024.11",
+    type: "팀 프로젝트",
+    tech: "Spring Boot + Swift",
+    description:
+      "AI와의 자연스러운 대화를 통해 개인 맞춤형 문제를 자동으로 생성하는 차세대 학습 플랫폼입니다.",
+    role: [
+      "Spring Boot 기반 RESTful API 설계 및 구현",
+      "AI 모델과의 통신 인터페이스 개발",
+      "사용자 학습 데이터 분석 알고리즘 구현",
+      "iOS 앱과 백엔드 API 연동",
+    ],
+    techStack: [
+      "Swift (iOS)",
+      "Spring Boot (Java)",
+      "MySQL",
+      "AI API",
+      "Xcode",
+      "IntelliJ IDEA",
+      "Git",
+    ],
+    features: [
+      "AI 대화 시스템을 통한 학습 키워드 추출",
+      "사용자 학습 수준 자동 분석 알고리즘",
+      "키워드 기반 맞춤형 문제 자동 생성",
+      "개인별 난이도 조정 시스템",
+    ],
+    achievements: [
+      "실시간 AI 응답 속도 75% 개선 (2초 → 0.5초)",
+      "iOS 앱과 Spring Boot API 간 실시간 통신 구현",
+      "RESTful API 설계 및 엔드포인트 최적화",
+      "MySQL 데이터베이스 스키마 설계 및 쿼리 최적화",
+    ],
+  },
+  shop: {
+    title: "남성 의류 쇼핑몰 웹사이트",
+    period: "2024.04 - 2024.05",
+    type: "개인 프로젝트",
+    tech: "React + Node.js",
+    description:
+      "React와 MySQL을 활용한 전자상거래 플랫폼 풀스택 개발 프로젝트입니다.",
+    role: [
+      "프론트엔드 및 백엔드 전체 개발",
+      "React 컴포넌트 기반 UI/UX 설계",
+      "RESTful API 서버 구축",
+      "MySQL 데이터베이스 설계 및 구현",
+    ],
+    techStack: [
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Node.js",
+      "Express",
+      "MySQL",
+      "VS Code",
+      "Git",
+    ],
+    features: [
+      "JWT 기반 회원가입/로그인 시스템",
+      "상품 목록 및 상세 페이지",
+      "장바구니 및 위시리스트 기능",
+      "주문 및 결제 시스템",
+    ],
+    achievements: [
+      "React 컴포넌트 기반 아키텍처 설계 및 구현",
+      "JWT 기반 인증 시스템 구축",
+      "RESTful API 설계 및 구현",
+      "전체 개발 프로세스 경험 (기획 → 설계 → 개발 → 배포)",
+    ],
+  },
+};
