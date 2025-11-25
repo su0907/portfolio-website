@@ -21,13 +21,45 @@ body {
   min-height: 100vh;
 }
 
-/* 프린트 스타일 */
+/* 인쇄 최적화 */
 @media print {
+  /* 배경색 유지 */
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* 배경색 흰색으로 */
   body {
     background: white !important;
   }
 
+  /* 페이지 나누기 방지 */
+  section,
+  .rounded-lg,
+  .shadow-lg {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* 상단 고정 버튼만 숨기기 (다크모드, 인쇄 버튼) */
+  .fixed {
+    display: none !important;
+  }
+
+  /* 링크 색상 및 밑줄 제거 */
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  /* Tailwind print 클래스 */
   .print\:hidden {
     display: none !important;
+  }
+
+  /* 여백 최적화 */
+  .print\:mb-8 {
+    margin-bottom: 2rem !important;
   }
 }
