@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { projectData } from "../../data/projectData";
+import { AladinDetail } from "../AladinDetail";
 
 export const ProjectDetail = ({
   projectId,
@@ -16,6 +17,18 @@ export const ProjectDetail = ({
 
   if (!project) return null;
 
+  // 알라딘 프로젝트는 특별한 레이아웃 사용
+  if (projectId === "aladin") {
+    return (
+      <AladinDetail
+        isDarkMode={isDarkMode}
+        themeColors={themeColors}
+        onBack={onBack}
+      />
+    );
+  }
+
+  // 기존 프로젝트 레이아웃 (TalkDok, B+코치)
   return (
     <div
       className={`min-h-screen ${

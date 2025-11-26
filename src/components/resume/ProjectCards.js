@@ -17,11 +17,11 @@ export const ProjectCards = ({ isDarkMode, themeColors, onProjectSelect }) => {
       description: "Spring Boot + Swift 기반 AI 학습 플랫폼",
     },
     {
-      id: "shop",
-      icon: "🛒",
-      title: "쇼핑몰",
-      subtitle: "전자상거래 웹사이트",
-      description: "React + Node.js 기반 풀스택 프로젝트",
+      id: "aladin",
+      icon: "📊",
+      title: "알라딘 분석",
+      subtitle: "베스트셀러 데이터 분석",
+      description: "Python 기반 5년간 독서 트렌드 분석",
     },
   ];
 
