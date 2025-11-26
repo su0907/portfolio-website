@@ -864,7 +864,6 @@ plt.ylabel('평균 가격 (원)')
 plt.title('연도별 베스트셀러 평균 가격 추이')
 plt.savefig('01_yearly_price_trend.png', dpi=300)`}
             </CodeBlock>
-
             <h4
               className={`text-lg font-semibold mb-3 mt-6 ${themeColors.text}`}
             >
@@ -878,12 +877,19 @@ plt.savefig('01_yearly_price_trend.png', dpi=300)`}
 2024년: 16,010원 (+4.3%)
 2025년: 16,158원 (+0.9%)`}
             </CodeBlock>
-
             <h4
               className={`text-lg font-semibold mb-3 mt-6 ${themeColors.text}`}
             >
               참고: 2022년 전체 출판 시장 신간 평균 정가
             </h4>
+            {/* 이미지 추가 */}
+            <div className="w-full flex justify-center mb-4">
+              <img
+                src="/images/2022_book_price.PNG"
+                alt="2022년 전체 출판 시장 신간 평균 정가"
+                className="rounded-lg shadow-md w-full max-w-3xl"
+              />
+            </div>
             <p className={`mb-3 ${themeColors.secondary}`}>
               <strong>대한출판문화협회 통계:</strong>
             </p>
@@ -891,7 +897,6 @@ plt.savefig('01_yearly_price_trend.png', dpi=300)`}
               {`2021년 발행 도서 평균 정가: 17,116원
 2022년 발행 도서 평균 정가: 17,869원 (+4.4%)`}
             </CodeBlock>
-
             <HighlightBox isDarkMode={isDarkMode} themeColors={themeColors}>
               <p className={`font-semibold mb-2 ${themeColors.text}`}>
                 베스트셀러 vs 전체 신간 시장 비교:
@@ -1548,6 +1553,36 @@ increase_rate = (after_count / before_count - 1) * 100`}
             <li>시각화 코드 (15개 메인 시각화)</li>
             <li>최종 데이터 (aladin_final_cleaned.csv)</li>
             <li>프로젝트 문서 (README.md)</li>
+          </ul>
+        </div>
+        {/* 7. 참고문헌 */}
+        <div
+          className={`${
+            isDarkMode ? "bg-gray-800" : "bg-white"
+          } rounded-lg shadow-xl p-8 mt-10`}
+        >
+          <h2 className={`text-3xl font-bold mb-4 ${themeColors.text}`}>
+            데이터 출처
+          </h2>
+
+          <ul className={`list-disc pl-6 ${themeColors.secondary} space-y-3`}>
+            <li>
+              알라딘. <strong>월간 베스트셀러 TOP 50 (2020.01~2025.11)</strong>
+              <br />
+              <a
+                href="https://www.aladin.co.kr/shop/common/wbest.aspx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline hover:text-blue-800"
+              >
+                https://www.aladin.co.kr/shop/common/wbest.aspx
+              </a>
+            </li>
+
+            <li>
+              대한출판문화협회 (2023.07.17).
+              <strong>『2022년 책 종수와 평균 정가』 통계 발표</strong>
+            </li>
           </ul>
         </div>
       </div>
